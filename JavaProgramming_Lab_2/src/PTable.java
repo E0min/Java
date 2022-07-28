@@ -10,7 +10,6 @@ public class PTable {
     public static final int FLUORINE = 9; //플루오린
     public static final int NEON = 10; // 네온
 
-
     public static String getSymbol(int element) {
         if (element == 1){return "H";}
         if (element == 2){return "He";}
@@ -49,6 +48,5 @@ public class PTable {
         if (element == 9){return 18.9984;}
         if (element == 10){return 20.1797;}
         else return 0;
-
     }
 }

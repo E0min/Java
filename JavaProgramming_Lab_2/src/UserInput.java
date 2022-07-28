@@ -1,13 +1,12 @@
 import java.util.*;
-
 public class UserInput {
 
     private static Scanner input = new Scanner(System.in);
     public static double getDouble(){ return Double.parseDouble(input.nextLine());}
     public static int getInteger(){ return Integer.parseInt(input.nextLine());}
-    public static int getIntegerBetween(int min, int max){
- // 최솟값, 최댓값 범위를 정해주기
-        return 0;
+    public static void getIntegerBetween(int min, int max){
+        System.out.println(min+"~"+max +" 사이의 원소번호를 입력해주세요");
+
     }
 
     public static boolean getExitKey(){
