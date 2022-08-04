@@ -10,7 +10,7 @@ public class UserInput {
     }
 
     public static boolean getExitKey(){
-        System.out.print("press q-key to exit or enter-key to continue: ");
+        System.out.print("press q-key to exit or enter-key to continue: \n");
         String s = input.nextLine();
         if(s.contentEquals("q"))
             return true;
