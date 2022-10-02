@@ -6,20 +6,20 @@ public class PeriodicTable {
     }
 
     PeriodicElement [] gas ={
-            new PeriodicElement(1,"H","Hydrogen", 1.01, PeriodicElement.State.GAS),
-            new PeriodicElement(2,"He","Helium", 4.00, PeriodicElement.State.GAS),
-            new PeriodicElement(7,"N","Nitrogen", 14.01, PeriodicElement.State.GAS),
-            new PeriodicElement(8,"O","Oxygen", 16.00, PeriodicElement.State.GAS),
-            new PeriodicElement(9,"F","Fluorine", 19.00, PeriodicElement.State.GAS),
+            new PeriodicElement(1,"H","Hydrogen", 1.01),
+            new PeriodicElement(2,"He","Helium", 4.00),
+            new PeriodicElement(7,"N","Nitrogen", 14.01),
+            new PeriodicElement(8,"O","Oxygen", 16.00),
+            new PeriodicElement(9,"F","Fluorine", 19.00),
     };
     PeriodicElement [] liquid = {
-            new PeriodicElement(10,"Ne","Neon",20.18,PeriodicElement.State.LIQUID)
+            new PeriodicElement(10,"Ne","Neon",20.18)
     };
     PeriodicElement [] soild = {
-            new PeriodicElement(3,"Li","Lithium", 6.94, PeriodicElement.State.SOLID),
-            new PeriodicElement(4,"Be","Beryllium", 9.01, PeriodicElement.State.SOLID),
-            new PeriodicElement(5,"B","Boron", 10.81, PeriodicElement.State.SOLID),
-            new PeriodicElement(6,"C","Carbon", 12.01, PeriodicElement.State.SOLID),
+            new PeriodicElement(3,"Li","Lithium", 6.94),
+            new PeriodicElement(4,"Be","Beryllium", 9.01),
+            new PeriodicElement(5,"B","Boron", 10.81),
+            new PeriodicElement(6,"C","Carbon", 12.01),
     };
     //
     PeriodicElement get(int index) { return elements[index-1]; }
@@ -78,6 +78,10 @@ public class PeriodicTable {
             case SOLID: return soild;
         }
         return null;
+    }
+
+    public void set(int index, PeriodicElement pe){
+        this.elements[index] = pe;
     }
 }
 
